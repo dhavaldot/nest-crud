@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import { UserModel } from './../models/user.model';
 import { flatten, Inject, Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
@@ -24,7 +25,6 @@ export class UserService {
 
   async Update(id, data) {
     let filter = { _id: Types.ObjectId(id) };
-    let options = { new: true };
     console.log('filter', filter);
     return await this.userModel.updateOne(filter, data);
   }

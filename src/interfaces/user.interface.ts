@@ -1,8 +1,8 @@
-import { Document, ObjectId } from 'mongoose';
+import { Document } from 'mongoose';
 
 export interface User extends Document {
-  Name: String;
-  email: String;
-  password: String;
-  resetLink: String[];
+  Name: string;
+  email: string;
+  password: string;
+  resetLink: string[];
 }
