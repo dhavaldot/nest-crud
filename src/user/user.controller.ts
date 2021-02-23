@@ -27,7 +27,7 @@ export class UserController {
   @Post('users')
   async createUser(@Body() user: any, @Res() res) {
     console.log(user);
-    let id = user['id'];
+    const id = user['id'];
     if (!user.email || !user.password || !user.Name) {
       return res.status(200).send({
         Success: false,

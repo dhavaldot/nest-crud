@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Controller, Get, Redirect } from '@nestjs/common';
 import { AppService } from './app.service';
 import { UserService } from './user/user.service';
